@@ -8,7 +8,7 @@ node_js:
   - 0.11
   - 0.10
 services:
-  - elasticsearch
+  - redis
 
 # The path for Xunit to output test reports
 env:
