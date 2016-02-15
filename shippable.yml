@@ -8,7 +8,7 @@ node_js:
   - 0.11
   - 0.10
 services:
-  - redis
+  - rabbitmq
 
 # The path for Xunit to output test reports
 env:
@@ -44,7 +44,7 @@ build:
     image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
-
+  
   ci:
     
     - echo "Hello, World!"
