@@ -8,7 +8,7 @@ node_js:
   - 0.11
   - 0.10
 services:
-  - redis
+  - memcached
 
 # The path for Xunit to output test reports
 env:
