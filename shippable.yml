@@ -48,16 +48,4 @@ build:
   ci:
     
     - echo "Hello, World!"
-    - env
-    - echo $PATH
-    - reports --help
-    - node --version
-    - mkdir -p shippable/testresults
-    - mkdir -p shippable/codecoverage
-    - source ~/.nvm/nvm.sh && nvm install 0.12
-    - node --version
-    - npm install
-    - ./node_modules/.bin/istanbul cover grunt -- -u tdd
-    - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
-    - grunt      
 
